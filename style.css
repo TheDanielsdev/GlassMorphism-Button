@@ -14,6 +14,18 @@ body {
     background-color: #350048;
 }
 
+.dark {
+    background-color: #000;
+}
+
+.blue {
+    background-color: lightblue;
+}
+
+.red {
+    background-color: rgb(245, 79, 79);
+}
+
 .container {
     width: 600px;
     display: flex;

@@ -9,14 +9,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="btn3 btn2 btn1">
 
     <div class="container">
-        <div class="btn"><a href="#">Read More</a></div>
-        <div class="btn"><a href="#">Read More</a></div>
-        <div class="btn"><a href="#">Read More</a></div>
+        <div class="btn" onclick="red()"><a href="#">Read More</a></div>
+        <div class="btn" onclick="blue()"><a href="#">Read More</a></div>
+        <div class="btn" onclick="dark()"><a href="#">Read More</a></div>
     </div>
 
 </body>
+
+<script>
+    function dark() {
+        const btn3 = document.querySelector('.btn3');
+        btn3.classList.toggle('dark');
+    }
+
+    function blue() {
+        const btn2 = document.querySelector('.btn2');
+        btn2.classList.toggle('blue');
+    }
+
+    function red() {
+        const btn1 = document.querySelector('.btn1');
+        btn1.classList.toggle('red');
+    }
+</script>
 
 </html>
